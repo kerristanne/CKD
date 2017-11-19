@@ -20,7 +20,10 @@ namespace CKD
 		protected override void OnStart ()
 		{
 			// Handle when your app starts
-            MainPage = new NavigationPage(new CKD.RegisterPage());
+
+            // check to see if logged in. If so, go to daily mood check.
+            // If not go here
+            MainPage = new NavigationPage(new CKD.Introduction.LoginOrRegister());
 		}
 
 		protected override void OnSleep ()
@@ -31,7 +34,7 @@ namespace CKD
 		protected override void OnResume ()
 		{
 			// Handle when your app resumes
-            MainPage = new NavigationPage(new CKD.DailyMoodCheck());
+            // MainPage = new NavigationPage(new CKD.DailyMoodCheck());
 		}
 	}
 }

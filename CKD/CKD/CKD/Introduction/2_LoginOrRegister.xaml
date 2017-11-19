@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="CKD.Introduction.LoginOrRegister">
+	<ContentPage.Content>
+        <StackLayout>
+            <Label Text="Social Dialysis"
+                VerticalOptions="Start"
+                HorizontalOptions="Center">
+            </Label>
+            <Button Text="Login"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                x:Name="login">
+            </Button>
+            <Button Text="Register"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                x:Name="register">
+            </Button>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

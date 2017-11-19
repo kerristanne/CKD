@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace CKD
+namespace CKD.Introduction
 {
     public partial class DailyMoodCheck : ContentPage
     {

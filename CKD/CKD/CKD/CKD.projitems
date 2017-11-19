@@ -9,33 +9,50 @@
     <Import_RootNamespace>CKD</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+      <DependentUpon>6_MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)DailyMoodCheck.xaml.cs">
-      <DependentUpon>DailyMoodCheck.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Introduction\DailyMoodCheck.xaml.cs">
+      <DependentUpon>5_DailyMoodCheck.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)RegisterPage.xaml.cs">
-      <DependentUpon>RegisterPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Introduction\RegisterPage.xaml.cs">
+      <DependentUpon>3_RegisterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Introduction\LoginOrRegister.xaml.cs">
+      <DependentUpon>2_LoginOrRegister.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Introduction\Demographics.xaml.cs">
+      <DependentUpon>4_Demographics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>1_App.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)6_MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Introduction\5_DailyMoodCheck.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Introduction\3_RegisterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Introduction\2_LoginOrRegister.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)DailyMoodCheck.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Introduction\4_Demographics.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)RegisterPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)1_App.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Introduction\" />
   </ItemGroup>
 </Project>

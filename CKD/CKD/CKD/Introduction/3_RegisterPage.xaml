@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CKD.RegisterPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="CKD.Introduction.RegisterPage">
 	<ContentPage.Content>
         <StackLayout>
             <Label Text="Register Your Account"
@@ -17,10 +19,6 @@
                 HorizontalOptions="Center"
                 VerticalOptions="End"
             Clicked="CreateAccount"></Button>
-            <Button Text="Login"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                Clicked="Login"></Button>
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>
