@@ -13,12 +13,14 @@ namespace CKD
 		{
 			InitializeComponent();
 
-			MainPage = new CKD.MainPage();
+            // This is where we set what the first page we go to is
+            // MainPage = new NavigationPage(new CKD.DailyMoodCheck());
 		}
 
 		protected override void OnStart ()
 		{
 			// Handle when your app starts
+            MainPage = new NavigationPage(new CKD.RegisterPage());
 		}
 
 		protected override void OnSleep ()
@@ -29,6 +31,7 @@ namespace CKD
 		protected override void OnResume ()
 		{
 			// Handle when your app resumes
+            MainPage = new NavigationPage(new CKD.DailyMoodCheck());
 		}
 	}
 }

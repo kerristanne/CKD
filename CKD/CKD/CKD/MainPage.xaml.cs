@@ -8,10 +8,15 @@ using Xamarin.Forms;
 namespace CKD
 {
 	public partial class MainPage : ContentPage
-	{
-		public MainPage()
+    {
+        public MainPage()
 		{
 			InitializeComponent();
 		}
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            DisplayAlert("Login Attempt", "You're logged in!", "OK");
+        }
 	}
 }

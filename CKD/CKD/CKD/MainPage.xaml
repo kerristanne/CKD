@@ -1,13 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CKD"
              x:Class="CKD.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="My first Xamarin Program compiled!!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Welcome to Social Dialysis"
+                HorizontalOptions="Center"
+                VerticalOptions="Start" />
+            <Button Text="Exercise"
+                VerticalOptions="End">
+                </Button>
+            <Button Text="Diet"
+                VerticalOptions="End">
+                </Button>
+            <Button Text="Social"
+                VerticalOptions="End">
+                </Button>
+            <Button Text="Mood"
+                VerticalOptions="End">
+                </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="CKD.DailyMoodCheck">
+	<ContentPage.Content>
+        <StackLayout>
+            <Label Text="How are you feeling?"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"/>
+            <Button Text="Bad" 
+                x:Name="badmood"
+                HorizontalOptions="Center"></Button>
+            <Button Text="OK" 
+                x:Name="okmood"
+                HorizontalOptions="Center"></Button>
+            <Button Text="Good" 
+                x:Name="goodmood"
+                HorizontalOptions="Center"></Button>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
