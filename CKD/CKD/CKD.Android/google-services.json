@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1081651071000",
+    "firebase_url": "https://socialdialysis.firebaseio.com",
+    "project_id": "socialdialysis",
+    "storage_bucket": "socialdialysis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081651071000:android:8d65573d5a85de9a",
+        "android_client_info": {
+          "package_name": "com.companyname.CKD"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081651071000-ki8q0lppbahvgpghs400b1c4re5tod3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDudGdgyUsLU0lFe0nJi3LkCLoBbOy26ZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
