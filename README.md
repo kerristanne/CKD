@@ -8,9 +8,13 @@
 
 <details>
   <summary>ReadMe Markdown Resources</summary>
-  * [Different Things You Can Do](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
-  * [Organization Rec](https://gist.github.com/jxson/1784669)
-  * [What to use/Markdown Help](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  <p>
+  [Different Things You Can Do](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
+  <br>
+  [Organization Rec](https://gist.github.com/jxson/1784669)
+  <br>
+  [What to use/Markdown Help](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  </p>
 </details>
 
 ## Team Members ##
