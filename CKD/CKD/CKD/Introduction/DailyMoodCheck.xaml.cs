@@ -11,14 +11,21 @@ namespace CKD.Introduction
         {
             InitializeComponent();
 
-            badmood.Clicked += async (sender, args) =>
+            sadmood.Clicked += async (sender, args) =>
             {
                 // log response in DB
                 await Navigation.PushAsync(new MainPage());
                 Navigation.RemovePage(this);
             };
 
-            okmood.Clicked += async (sender, args) =>
+            happymood.Clicked += async (sender, args) =>
+            {
+                // log response in DB
+                await Navigation.PushAsync(new MainPage());
+                Navigation.RemovePage(this);
+            };
+
+            angrymood.Clicked += async (sender, args) =>
             {
                 // log response in DB
                 await Navigation.PushAsync(new MainPage());

@@ -2,20 +2,52 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="CKD.Introduction.DailyMoodCheck">
-	<ContentPage.Content>
-        <StackLayout>
-            <Label Text="How are you feeling?"
-                HorizontalOptions="Center"
-                VerticalOptions="Start"/>
-            <Button Text="Bad" 
-                x:Name="badmood"
-                HorizontalOptions="Center"></Button>
-            <Button Text="OK" 
-                x:Name="okmood"
-                HorizontalOptions="Center"></Button>
-            <Button Text="Good" 
-                x:Name="goodmood"
-                HorizontalOptions="Center"></Button>
-        </StackLayout>
-	</ContentPage.Content>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75" /> <!-- Row 1 Title -->
+                <RowDefinition Height="150" /> <!-- Row 2 Sad & Happy Image -->
+                <RowDefinition Height="50" />  <!-- Row 3 Sad & Happy Button -->
+                <RowDefinition Height="150" /> <!-- Row 4 Angry & Good Image -->
+                <RowDefinition Height="50" />  <!-- Row 5 Angry & Good Button -->
+            </Grid.RowDefinitions>
+
+            <!--Title Question Label-->
+            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Text="How Are You Feeling Today?:" HorizontalOptions="Center" FontAttributes="Bold" />
+
+            <!--Sad Image-->
+            <Image Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,20,0" Source="sad.png"/>
+
+            <!--Sad Button-->
+            <Button Grid.Row="2" Grid.Column="1" Text="Sad" Margin="0,0,20,0"
+                x:Name="sadmood">
+            </Button>
+
+            <!--Happy Image-->
+            <Image Grid.Row="1" Grid.Column="2" HorizontalOptions="Center"  Margin="0,0,20,0" Source="happy.png"/>
+
+            <!--Happy Button-->
+            <Button Grid.Row="2" Grid.Column="2" Text="Happy" Margin="0,0,20,0"
+                x:Name="happymood">
+            </Button>
+
+            <!--Angry Image-->
+            <Image Grid.Row="3" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,20,0" Source="angry.png"/>
+
+            <!--Angry Button-->
+            <Button Grid.Row="4" Grid.Column="1" Text="Angry" Margin="0,0,20,0"
+                x:Name="angrymood">
+            </Button>
+
+            <!--Good Image-->
+            <Image Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" Margin="0,0,20,0" Source="good.png"/>
+
+            <!--Good Button-->
+            <Button Grid.Row="4" Grid.Column="2" Text="Good" Margin="0,0,20,0"
+                x:Name="goodmood">
+            </Button>
+
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
