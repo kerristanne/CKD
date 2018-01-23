@@ -14,7 +14,8 @@
             </Grid.RowDefinitions>
 
             <!--Title Question Label-->
-            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Text="How Are You Feeling Today?:" HorizontalOptions="Center" FontAttributes="Bold" />
+            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Text="How Are You Feeling Today?:" 
+                   HorizontalOptions="Center" FontAttributes="Bold" />
 
             <!--Sad Image-->
             <Image Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,20,0" Source="sad.png"/>

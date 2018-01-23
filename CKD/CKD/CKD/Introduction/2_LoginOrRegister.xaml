@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="CKD.Introduction.LoginOrRegister">
+    x:Class="CKD.Introduction.LoginOrRegister"
+    Title="Social Dialysis">
+    
+    
 	<ContentPage.Content>
-        <StackLayout>
-            <Label Text="Social Dialysis"
-                VerticalOptions="Start"
-                HorizontalOptions="Center">
-            </Label>
-            <Button Text="Login"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                x:Name="login">
-            </Button>
-            <Button Text="Register"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-                x:Name="register">
-            </Button>
-        </StackLayout>
-	</ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Button  Grid.Row="2"  FontSize="Medium" HeightRequest="100" WidthRequest="200" Text="Login" 
+                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand" x:Name="login"/>
+
+            <Button  Grid.Row="4"  FontSize="Medium" HeightRequest="100" WidthRequest="200" Text="Register" 
+                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand" x:Name="register"/>
+
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>
