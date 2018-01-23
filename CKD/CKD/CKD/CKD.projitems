@@ -9,6 +9,7 @@
     <Import_RootNamespace>CKD</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)FirebaseConnection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Introduction\LoginPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
