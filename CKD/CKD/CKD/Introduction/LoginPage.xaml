@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CKD.Introduction.LoginPage"
+             BackgroundColor="Azure"
+             Title="Login Page">
+
+        <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label 
+                Text="Please Login Using Your Email And Password" 
+                Grid.Row="1" 
+                VerticalOptions="StartAndExpand"  
+                HorizontalOptions="Center"
+                TextColor="Black"
+                Font="Bold"
+                FontSize="Large"/>
+
+            <Entry
+                x:Name="EmailEntry"
+                Grid.Row="2"
+                Keyboard="Email" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" 
+                BackgroundColor="White"
+                Placeholder="Email Address" 
+                PlaceholderColor="Gray"
+                FontSize="Large"/>
+
+            <Entry
+                x:Name="PasswordEntry"
+                Grid.Row="3"
+                Keyboard="Default" 
+                IsPassword="True" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                BackgroundColor="White"  
+                Placeholder="Password" 
+                PlaceholderColor="Gray"
+                FontSize="Large"/>
+
+            <Button  
+                x:Name="LoginButton"
+                Grid.Row="4"  
+                FontSize="Medium" 
+                HeightRequest="100" 
+                WidthRequest="200" 
+                Text="Login" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="Green"
+                />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

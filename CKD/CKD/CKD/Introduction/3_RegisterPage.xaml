@@ -1,24 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="CKD.Introduction.RegisterPage">
-	<ContentPage.Content>
-        <StackLayout>
-            <Label Text="Register Your Account"
-                HorizontalOptions="Center"
-                VerticalOptions="Start"></Label>
-            <Entry Text="Username"
-                HorizontalOptions="Center"></Entry>
-            <Entry Text="Password"
-                HorizontalOptions="Center"></Entry>
-            <Entry Text="Confirm Password"
-                HorizontalOptions="Center"></Entry>
-            <Entry Text="Phone Number"
-                HorizontalOptions="Center"></Entry>
-            <Button Text="Create Account"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-            Clicked="CreateAccount"></Button>
-        </StackLayout>
-	</ContentPage.Content>
+    x:Class="CKD.Introduction.RegisterPage"
+    BackgroundColor="Azure"
+    Title="Register Account">
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label 
+            Text="Fill in The Following Fields to Create Your Account" 
+            Grid.Row="1"   
+            HorizontalOptions="Center"
+            TextColor="Black"
+            Font="Bold"
+            FontSize="Large"/>
+
+            <Entry
+            x:Name="NameEntry"
+            Grid.Row="2"
+            Keyboard="Text" 
+            HorizontalOptions="Fill"
+            VerticalOptions="Center" 
+            BackgroundColor="White"
+            Placeholder="First and Last Name" 
+            PlaceholderColor="Gray"
+            FontSize="Large"/>
+
+
+            <Entry
+            x:Name="EmailEntry"
+            Grid.Row="3"
+            Keyboard="Email" 
+            HorizontalOptions="Fill"  
+            VerticalOptions="Center" 
+            BackgroundColor="White"
+            Placeholder="Email Address" 
+            PlaceholderColor="Gray"
+            FontSize="Large"/>
+
+            <Entry
+            x:Name="PhoneEntry"
+            Grid.Row="4"
+            Keyboard="Telephone" 
+            HorizontalOptions="Fill"
+            VerticalOptions="Center" 
+            BackgroundColor="White"  
+            Placeholder="Phone Numer" 
+            PlaceholderColor="Gray"
+            FontSize="Large"/>
+
+            <Entry
+            x:Name="AgeEntry"
+            Grid.Row="5"
+            Keyboard="Numeric" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Fill"
+            BackgroundColor="White"  
+            Placeholder="Age" 
+            PlaceholderColor="Gray"
+            FontSize="Large"/>
+
+            <Entry
+                x:Name="WeightEntry"
+                Grid.Row="6"
+                Keyboard="Numeric" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Fill" 
+                BackgroundColor="White"  
+                Placeholder="Weight" 
+                PlaceholderColor="Gray"
+                FontSize="Large"/>
+
+            <Entry
+                x:Name="ActivityLevelEntry"
+                Grid.Row="7"
+                Keyboard="Numeric" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Fill" 
+                BackgroundColor="White"  
+                Placeholder="Activity Level 1-10" 
+                PlaceholderColor="Gray"
+                FontSize="Large"/>
+
+
+            <Button  
+                x:Name="RegisterButton"
+                Grid.Row="8"  
+                FontSize="Large" 
+                HeightRequest="100" 
+                WidthRequest="200" 
+                Text="Register" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand"
+                BackgroundColor="LightGreen" />
+
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

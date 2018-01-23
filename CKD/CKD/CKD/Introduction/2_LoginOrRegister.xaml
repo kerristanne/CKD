@@ -14,11 +14,27 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Button  Grid.Row="2"  FontSize="Medium" HeightRequest="100" WidthRequest="200" Text="Login" 
-                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand" x:Name="login"/>
+            <Button  
+                Grid.Row="2"  
+                FontSize="Medium" 
+                HeightRequest="100" 
+                WidthRequest="200" 
+                Text="Login" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" 
+                x:Name="login"
+                BackgroundColor="Green"/>
 
-            <Button  Grid.Row="4"  FontSize="Medium" HeightRequest="100" WidthRequest="200" Text="Register" 
-                     HorizontalOptions="Center" VerticalOptions="CenterAndExpand" x:Name="register"/>
+            <Button  
+                Grid.Row="4"  
+                FontSize="Medium" 
+                HeightRequest="100" 
+                WidthRequest="200" 
+                Text="Register" 
+                HorizontalOptions="Center" 
+                VerticalOptions="CenterAndExpand" 
+                x:Name="register"
+                BackgroundColor="Green"/>
 
         </Grid>
     </ContentPage.Content>

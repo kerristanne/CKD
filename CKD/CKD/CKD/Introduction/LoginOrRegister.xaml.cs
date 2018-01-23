@@ -13,7 +13,7 @@ namespace CKD.Introduction
 
             login.Clicked += async (sender, args) =>
             {
-                await Navigation.PushAsync(new Introduction.DailyMoodCheck());
+                await Navigation.PushAsync(new Introduction.LoginPage());
                 Navigation.RemovePage(this);
             };
 
