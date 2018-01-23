@@ -22,7 +22,6 @@ namespace CKD.Introduction
                     Weight = WeightEntry.Text,
                     ActivityLevel = ActivityLevelEntry.Text
                 };
-
                 await Navigation.PushAsync(new Introduction.DailyMoodCheck());
                 Navigation.RemovePage(this);
             };
