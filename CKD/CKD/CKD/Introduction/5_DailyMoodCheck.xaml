@@ -6,16 +6,20 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="75" /> <!-- Row 1 Title -->
-                <RowDefinition Height="150" /> <!-- Row 2 Sad & Happy Image -->
-                <RowDefinition Height="50" />  <!-- Row 3 Sad & Happy Button -->
-                <RowDefinition Height="150" /> <!-- Row 4 Angry & Good Image -->
-                <RowDefinition Height="50" />  <!-- Row 5 Angry & Good Button -->
+                <RowDefinition Height="Auto" /> <!-- Row 1 Title -->
+                <RowDefinition Height="3*" /> <!-- Row 2 Sad & Happy Image -->
+                <RowDefinition Height="Auto" />  <!-- Row 3 Sad & Happy Button -->
+                <RowDefinition Height="3*" /> <!-- Row 4 Angry & Good Image -->
+                <RowDefinition Height="Auto" />  <!-- Row 5 Angry & Good Button -->
             </Grid.RowDefinitions>
 
             <!--Title Question Label-->
-            <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Text="How Are You Feeling Today?:" 
-                   HorizontalOptions="Center" FontAttributes="Bold" />
+            <Label Grid.Row="0" 
+                   Grid.Column="1" 
+                   Grid.ColumnSpan="3" 
+                   Text="How Are You Feeling Today?:" 
+                   FontAttributes="Bold" 
+                   FontSize="Large"/>
 
             <!--Sad Image-->
             <Image Grid.Row="1" Grid.Column="1" HorizontalOptions="Center" Margin="0,0,20,0" Source="sad.png"/>

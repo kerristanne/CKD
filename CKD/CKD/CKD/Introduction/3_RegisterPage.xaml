@@ -8,7 +8,7 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="200" />
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -24,7 +24,7 @@
             HorizontalOptions="Center"
             TextColor="Black"
             Font="Bold"
-            FontSize="Large"/>
+            FontSize="Medium"/>
 
             <Entry
             x:Name="NameEntry"
@@ -71,39 +71,39 @@
             PlaceholderColor="Gray"
             FontSize="Large"/>
 
-            <Entry
-                x:Name="WeightEntry"
-                Grid.Row="6"
-                Keyboard="Numeric" 
-                VerticalOptions="Center" 
-                HorizontalOptions="Fill" 
-                BackgroundColor="White"  
-                Placeholder="Weight" 
-                PlaceholderColor="Gray"
-                FontSize="Large"/>
+           <Entry
+           x:Name="WeightEntry"
+           Grid.Row="6"
+           Keyboard="Numeric" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Fill" 
+           BackgroundColor="White"  
+           Placeholder="Weight" 
+           PlaceholderColor="Gray"
+           FontSize="Large"/>
 
-            <Entry
-                x:Name="ActivityLevelEntry"
-                Grid.Row="7"
-                Keyboard="Numeric" 
-                VerticalOptions="Center" 
-                HorizontalOptions="Fill" 
-                BackgroundColor="White"  
-                Placeholder="Activity Level 1-10" 
-                PlaceholderColor="Gray"
-                FontSize="Large"/>
+           <Entry
+           x:Name="ActivityLevelEntry"
+           Grid.Row="7"
+           Keyboard="Numeric" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Fill" 
+           BackgroundColor="White"  
+           Placeholder="Activity Level 1-10" 
+           PlaceholderColor="Gray"
+           FontSize="Large"/>
 
 
-            <Button  
-                x:Name="RegisterButton"
-                Grid.Row="8"  
-                FontSize="Large" 
-                HeightRequest="100" 
-                WidthRequest="200" 
-                Text="Register" 
-                HorizontalOptions="Center" 
-                VerticalOptions="CenterAndExpand"
-                BackgroundColor="LightGreen" />
+           <Button  
+           x:Name="RegisterButton"
+           Grid.Row="8"  
+           FontSize="Large" 
+           HeightRequest="100" 
+           WidthRequest="200" 
+           Text="Register" 
+           HorizontalOptions="Center" 
+           VerticalOptions="CenterAndExpand"
+           BackgroundColor="LightGreen" />
 
         </Grid>
     </ContentPage.Content>

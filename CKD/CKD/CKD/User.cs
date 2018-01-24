@@ -13,6 +13,8 @@ namespace CKD
         public string Weight { get; set; }
         public string ActivityLevel { get; set; }
         public string Uid { get; set; }
-        public string FacilityID { get; set; }
+        // at some point, we need to add this.
+        // We need to figure out how to get people to select their facilities.
+        // public string FacilityID { get; set; }
     }
 }

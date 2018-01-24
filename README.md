@@ -17,6 +17,17 @@
   </p>
 </details>
 
+##Settings for Visual Studio##
+<p>
+Right click on CKD.Android > Properties > Android Manifest
+Make sure Minimum Android version is "Android 5.0 (API Level 21 - Lollipop).
+Make sure Target Android version is set to "Android 7.1 (API Level 25 - Nougat).
+
+Right click on CKD.Android > Properties > Application
+Make sure you compile using Android version: "Android 7.1 Nougat"
+</p>
+
+
 ## Team Members ##
 * Madeleine Cassidy
 * Matthew Kazen
